@@ -1,0 +1,29 @@
+body {
+  background-color: #24353f;
+}
+p {
+  font-size: 40px;
+  font-weight: bold;
+  color: #17a2b8 !important;
+}
+.nav-link {
+  right: 80px !important;
+  position: absolute !important;
+}
+
+/*media*/
+@media (max-width: 1399.98px) {
+}
+
+@media (max-width: 1199.98px) {
+}
+@media (max-width: 991.98px) {
+}
+
+@media (max-width: 767.98px) {
+  .parent {
+    width: 100% !important;
+  }
+}
+@media (max-width: 575.98px) {
+}

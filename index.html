@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Chewy&family=Nunito:wght@200;300;400;600;700&family=Pacifico&family=Poppins:wght@300;400;500;600;700;800;900&family=Rubik:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <!--bootstarp link-->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!--fontwesome link-->
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <!--style link-->
+    <link rel="stylesheet" href="./css/signup.css" />
+  </head>
+  <body>
+    <div class="w-75 mx-auto p-5 mt-5 parent">
+      <div class="form py-5 small shadow p-5" style="background-color: #24353f">
+        <h1>Smart Login System</h1>
+
+        <div
+          class="inputurl w-100 d-flex flex-column justify-content-center mt-2 mb-3"
+        >
+          <input
+            oninput="validitionemail()"
+            type="email"
+            placeholder="Enter your Email"
+            class="form-control"
+            id="inputemail"
+          />
+        </div>
+        <div
+          class="inputurl w-100 d-flex flex-column justify-content-center mt-2 mb-3"
+        >
+          <input
+            oninput="validitionpass()"
+            type="password"
+            placeholder="Enter your password"
+            class="form-control"
+            id="inputpass"
+          />
+        </div>
+        <p class="d-none" id="error2" style="color: green; text-align: center">
+          email not exists
+        </p>
+
+        <div class="button d-flex justify-content-center align-items-center">
+          <button
+            onclick="check()"
+            class="btn btn-submit px-5 small shadow w-100"
+            id="submitBtn"
+          >
+            log in
+          </button>
+        </div>
+        <p class="text-white text-center mt-3">
+          You have an account?
+          <a id="btnlocation" class="text-white" href="#">SignUp</a>
+        </p>
+      </div>
+    </div>
+
+    <script src="./js/login.js"></script>
+  </body>
+</html>
